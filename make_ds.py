@@ -7,9 +7,9 @@ import sys
 try:
     label_name = sys.argv[1]
     num_samples = int(sys.argv[2])
-except:
+except Exception as e:
     print("Arguments missing.")
-    print(desc)
+    print(e)
     exit(-1)
 
 IMG_SAVE_PATH = 'image_data'
